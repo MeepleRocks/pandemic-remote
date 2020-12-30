@@ -1,0 +1,290 @@
+[
+  {
+    "name": "Atlanta",
+    "region": 1,
+    "faction": 1,
+    "number": 2
+  },
+  {
+    "name": "Washington",
+    "region": 1,
+    "faction": 1,
+    "number": 1
+  },
+  {
+    "name": "San Francisco",
+    "region": 1,
+    "faction": 1,
+    "number": 6
+  },
+  {
+    "name": "New York",
+    "region": 1,
+    "faction": 1,
+    "number": 4
+  },
+  {
+    "name": "Los Angeles",
+    "region": 1,
+    "faction": 1,
+    "number": 8
+  },
+  {
+    "name": "Toronto",
+    "region": 1,
+    "faction": 1,
+    "number": 9
+  },
+  {
+    "name": "Mexico City",
+    "region": 1,
+    "faction": 2,
+    "number": 5
+  },
+  {
+    "name": "Havana",
+    "region": 1,
+    "faction": 3,
+    "number": 5
+  },
+  {
+    "name": "Bogota",
+    "region": 2,
+    "faction": 2,
+    "number": 3
+  },
+  {
+    "name": "Buenos Aires",
+    "region": 2,
+    "faction": 2,
+    "number": 1
+  },
+  {
+    "name": "Santiago",
+    "region": 2,
+    "faction": 2,
+    "number": 5
+  },
+  {
+    "name": "Lima",
+    "region": 2,
+    "faction": 2,
+    "number": 7
+  },
+  {
+    "name": "Sao Paulo",
+    "region": 2,
+    "faction": 2,
+    "number": 9
+  },
+  {
+    "name": "Istanbul",
+    "region": 3,
+    "faction": 1,
+    "number": 2
+  },
+  {
+    "name": "London",
+    "region": 3,
+    "faction": 1,
+    "number": 7
+  },
+  {
+    "name": "Kiev",
+    "region": 3,
+    "faction": 3,
+    "number": 3
+  },
+  {
+    "name": "East Berlin",
+    "region": 3,
+    "faction": 3,
+    "number": 9
+  },
+  {
+    "name": "Leningrad",
+    "region": 3,
+    "faction": 3,
+    "number": 2
+  },
+  {
+    "name": "Madrid",
+    "region": 3,
+    "faction": 2,
+    "number": 6
+  },
+  {
+    "name": "Moscow",
+    "region": 3,
+    "faction": 3,
+    "number": 8
+  },
+  {
+    "name": "Paris",
+    "region": 3,
+    "faction": 1,
+    "number": 5
+  },
+  {
+    "name": "Prague",
+    "region": 3,
+    "faction": 3,
+    "number": 1
+  },
+  {
+    "name": "Rome",
+    "region": 3,
+    "faction": 1,
+    "number": 8
+  },
+  {
+    "name": "Warsaw",
+    "region": 3,
+    "faction": 3,
+    "number": 4
+  },
+  {
+    "name": "Algiers",
+    "region": 4,
+    "faction": 1,
+    "number": 3
+  },
+  {
+    "name": "Cairo",
+    "region": 4,
+    "faction": 3,
+    "number": 7
+  },
+  {
+    "name": "Lagos",
+    "region": 4,
+    "faction": 2,
+    "number": 2
+  },
+  {
+    "name": "Khartoum",
+    "region": 4,
+    "faction": 2,
+    "number": 4
+  },
+  {
+    "name": "Leopoldville",
+    "region": 4,
+    "faction": 2,
+    "number": 8
+  },
+  {
+    "name": "Johannesburg",
+    "region": 4,
+    "faction": 1,
+    "number": 6
+  },
+  {
+    "name": "Bombay",
+    "region": 5,
+    "faction": 2,
+    "number": 2
+  },
+  {
+    "name": "Delhi",
+    "region": 5,
+    "faction": 2,
+    "number": 4
+  },
+  {
+    "name": "Karachi",
+    "region": 5,
+    "faction": 2,
+    "number": 8
+  },
+  {
+    "name": "Peking",
+    "region": 5,
+    "faction": 3,
+    "number": 2
+  },
+  {
+    "name": "Baghdad",
+    "region": 5,
+    "faction": 3,
+    "number": 5
+  },
+  {
+    "name": "Riyadh",
+    "region": 5,
+    "faction": 2,
+    "number": 6
+  },
+  {
+    "name": "Shanghai",
+    "region": 5,
+    "faction": 3,
+    "number": 6
+  },
+  {
+    "name": "Hanoi",
+    "region": 5,
+    "faction": 3,
+    "number": 1
+  },
+  {
+    "name": "Pyongyang",
+    "region": 5,
+    "faction": 3,
+    "number": 8
+  },
+  {
+    "name": "Novosibirsk",
+    "region": 5,
+    "faction": 3,
+    "number": 9
+  },
+  {
+    "name": "Calcutta",
+    "region": 5,
+    "faction": 2,
+    "number": 7
+  },
+  {
+    "name": "Bangkok",
+    "region": 5,
+    "faction": 2,
+    "number": 3
+  },
+  {
+    "name": "Saigon",
+    "region": 5,
+    "faction": 1,
+    "number": 4
+  },
+  {
+    "name": "Tokyo",
+    "region": 6,
+    "faction": 2,
+    "number": 1
+  },
+  {
+    "name": "Sydney",
+    "region": 6,
+    "faction": 1,
+    "number": 5
+  },
+  {
+    "name": "Osaka",
+    "region": 6,
+    "faction": 2,
+    "number": 4
+  },
+  {
+    "name": "Jakarta",
+    "region": 6,
+    "faction": 2,
+    "number": 6
+  },
+  {
+    "name": "Manila",
+    "region": 6,
+    "faction": 2,
+    "number": 9
+  }
+]

@@ -1,0 +1,18 @@
+type Faction {
+  name: String
+}
+
+type Region {
+  name: String
+}
+
+type Card {
+  name: String
+  region: Region
+  faction: Faction
+  number: Number
+}
+
+type Query {
+  cards: [Card]
+}
