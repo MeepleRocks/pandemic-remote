@@ -1,290 +1,338 @@
 [
   {
+    "id": "1",
     "name": "Atlanta",
-    "region": 1,
-    "faction": 1,
-    "number": 2
+    "region": "1",
+    "faction": "1",
+    "number": "2"
   },
   {
+    "id": "2",
     "name": "Washington",
-    "region": 1,
-    "faction": 1,
-    "number": 1
+    "region": "1",
+    "faction": "1",
+    "number": "1"
   },
   {
+    "id": "3",
     "name": "San Francisco",
-    "region": 1,
-    "faction": 1,
-    "number": 6
+    "region": "1",
+    "faction": "1",
+    "number": "6"
   },
   {
+    "id": "4",
     "name": "New York",
-    "region": 1,
-    "faction": 1,
-    "number": 4
+    "region": "1",
+    "faction": "1",
+    "number": "4"
   },
   {
+    "id": "5",
     "name": "Los Angeles",
-    "region": 1,
-    "faction": 1,
-    "number": 8
+    "region": "1",
+    "faction": "1",
+    "number": "8"
   },
   {
+    "id": "6",
     "name": "Toronto",
-    "region": 1,
-    "faction": 1,
-    "number": 9
+    "region": "1",
+    "faction": "1",
+    "number": "9"
   },
   {
+    "id": "7",
     "name": "Mexico City",
-    "region": 1,
-    "faction": 2,
-    "number": 5
+    "region": "1",
+    "faction": "2",
+    "number": "5"
   },
   {
+    "id": "8",
     "name": "Havana",
-    "region": 1,
-    "faction": 3,
-    "number": 5
+    "region": "1",
+    "faction": "3",
+    "number": "5"
   },
   {
+    "id": "9",
     "name": "Bogota",
-    "region": 2,
-    "faction": 2,
-    "number": 3
+    "region": "2",
+    "faction": "2",
+    "number": "3"
   },
   {
+    "id": "10",
     "name": "Buenos Aires",
-    "region": 2,
-    "faction": 2,
-    "number": 1
+    "region": "2",
+    "faction": "2",
+    "number": "1"
   },
   {
+    "id": "11",
     "name": "Santiago",
-    "region": 2,
-    "faction": 2,
-    "number": 5
+    "region": "2",
+    "faction": "2",
+    "number": "5"
   },
   {
+    "id": "12",
     "name": "Lima",
-    "region": 2,
-    "faction": 2,
-    "number": 7
+    "region": "2",
+    "faction": "2",
+    "number": "7"
   },
   {
+    "id": "13",
     "name": "Sao Paulo",
-    "region": 2,
-    "faction": 2,
-    "number": 9
+    "region": "2",
+    "faction": "2",
+    "number": "9"
   },
   {
+    "id": "14",
     "name": "Istanbul",
-    "region": 3,
-    "faction": 1,
-    "number": 2
+    "region": "3",
+    "faction": "1",
+    "number": "2"
   },
   {
+    "id": "15",
     "name": "London",
-    "region": 3,
-    "faction": 1,
-    "number": 7
+    "region": "3",
+    "faction": "1",
+    "number": "7"
   },
   {
+    "id": "16",
     "name": "Kiev",
-    "region": 3,
-    "faction": 3,
-    "number": 3
+    "region": "3",
+    "faction": "3",
+    "number": "3"
   },
   {
+    "id": "17",
     "name": "East Berlin",
-    "region": 3,
-    "faction": 3,
-    "number": 9
+    "region": "3",
+    "faction": "3",
+    "number": "9"
   },
   {
+    "id": "18",
     "name": "Leningrad",
-    "region": 3,
-    "faction": 3,
-    "number": 2
+    "region": "3",
+    "faction": "3",
+    "number": "2"
   },
   {
+    "id": "19",
     "name": "Madrid",
-    "region": 3,
-    "faction": 2,
-    "number": 6
+    "region": "3",
+    "faction": "2",
+    "number": "6"
   },
   {
+    "id": "20",
     "name": "Moscow",
-    "region": 3,
-    "faction": 3,
-    "number": 8
+    "region": "3",
+    "faction": "3",
+    "number": "8"
   },
   {
+    "id": "21",
     "name": "Paris",
-    "region": 3,
-    "faction": 1,
-    "number": 5
+    "region": "3",
+    "faction": "1",
+    "number": "5"
   },
   {
+    "id": "22",
     "name": "Prague",
-    "region": 3,
-    "faction": 3,
-    "number": 1
+    "region": "3",
+    "faction": "3",
+    "number": "1"
   },
   {
+    "id": "23",
     "name": "Rome",
-    "region": 3,
-    "faction": 1,
-    "number": 8
+    "region": "3",
+    "faction": "1",
+    "number": "8"
   },
   {
+    "id": "24",
     "name": "Warsaw",
-    "region": 3,
-    "faction": 3,
-    "number": 4
+    "region": "3",
+    "faction": "3",
+    "number": "4"
   },
   {
+    "id": "25",
     "name": "Algiers",
-    "region": 4,
-    "faction": 1,
-    "number": 3
+    "region": "4",
+    "faction": "1",
+    "number": "3"
   },
   {
+    "id": "26",
     "name": "Cairo",
-    "region": 4,
-    "faction": 3,
-    "number": 7
+    "region": "4",
+    "faction": "3",
+    "number": "7"
   },
   {
+    "id": "27",
     "name": "Lagos",
-    "region": 4,
-    "faction": 2,
-    "number": 2
+    "region": "4",
+    "faction": "2",
+    "number": "2"
   },
   {
+    "id": "28",
     "name": "Khartoum",
-    "region": 4,
-    "faction": 2,
-    "number": 4
+    "region": "4",
+    "faction": "2",
+    "number": "4"
   },
   {
+    "id": "29",
     "name": "Leopoldville",
-    "region": 4,
-    "faction": 2,
-    "number": 8
+    "region": "4",
+    "faction": "2",
+    "number": "8"
   },
   {
+    "id": "30",
     "name": "Johannesburg",
-    "region": 4,
-    "faction": 1,
-    "number": 6
+    "region": "4",
+    "faction": "1",
+    "number": "6"
   },
   {
+    "id": "31",
     "name": "Bombay",
-    "region": 5,
-    "faction": 2,
-    "number": 2
+    "region": "5",
+    "faction": "2",
+    "number": "2"
   },
   {
+    "id": "32",
     "name": "Delhi",
-    "region": 5,
-    "faction": 2,
-    "number": 4
+    "region": "5",
+    "faction": "2",
+    "number": "4"
   },
   {
+    "id": "33",
     "name": "Karachi",
-    "region": 5,
-    "faction": 2,
-    "number": 8
+    "region": "5",
+    "faction": "2",
+    "number": "8"
   },
   {
+    "id": "34",
     "name": "Peking",
-    "region": 5,
-    "faction": 3,
-    "number": 2
+    "region": "5",
+    "faction": "3",
+    "number": "2"
   },
   {
+    "id": "35",
     "name": "Baghdad",
-    "region": 5,
-    "faction": 3,
-    "number": 5
+    "region": "5",
+    "faction": "3",
+    "number": "5"
   },
   {
+    "id": "36",
     "name": "Riyadh",
-    "region": 5,
-    "faction": 2,
-    "number": 6
+    "region": "5",
+    "faction": "2",
+    "number": "6"
   },
   {
+    "id": "37",
     "name": "Shanghai",
-    "region": 5,
-    "faction": 3,
-    "number": 6
+    "region": "5",
+    "faction": "3",
+    "number": "6"
   },
   {
+    "id": "38",
     "name": "Hanoi",
-    "region": 5,
-    "faction": 3,
-    "number": 1
+    "region": "5",
+    "faction": "3",
+    "number": "1"
   },
   {
+    "id": "39",
     "name": "Pyongyang",
-    "region": 5,
-    "faction": 3,
-    "number": 8
+    "region": "5",
+    "faction": "3",
+    "number": "8"
   },
   {
+    "id": "40",
     "name": "Novosibirsk",
-    "region": 5,
-    "faction": 3,
-    "number": 9
+    "region": "5",
+    "faction": "3",
+    "number": "9"
   },
   {
+    "id": "41",
     "name": "Calcutta",
-    "region": 5,
-    "faction": 2,
-    "number": 7
+    "region": "5",
+    "faction": "2",
+    "number": "7"
   },
   {
+    "id": "42",
     "name": "Bangkok",
-    "region": 5,
-    "faction": 2,
-    "number": 3
+    "region": "5",
+    "faction": "2",
+    "number": "3"
   },
   {
+    "id": "43",
     "name": "Saigon",
-    "region": 5,
-    "faction": 1,
-    "number": 4
+    "region": "5",
+    "faction": "1",
+    "number": "4"
   },
   {
+    "id": "44",
     "name": "Tokyo",
-    "region": 6,
-    "faction": 2,
-    "number": 1
+    "region": "6",
+    "faction": "2",
+    "number": "1"
   },
   {
+    "id": "45",
     "name": "Sydney",
-    "region": 6,
-    "faction": 1,
-    "number": 5
+    "region": "6",
+    "faction": "1",
+    "number": "5"
   },
   {
+    "id": "46",
     "name": "Osaka",
-    "region": 6,
-    "faction": 2,
-    "number": 4
+    "region": "6",
+    "faction": "2",
+    "number": "4"
   },
   {
+    "id": "47",
     "name": "Jakarta",
-    "region": 6,
-    "faction": 2,
-    "number": 6
+    "region": "6",
+    "faction": "2",
+    "number": "6"
   },
   {
+    "id": "48",
     "name": "Manila",
-    "region": 6,
-    "faction": 2,
-    "number": 9
+    "region": "6",
+    "faction": "2",
+    "number": "9"
   }
 ]

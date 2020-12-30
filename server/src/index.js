@@ -1,9 +1,11 @@
-import { ApolloServer, mergeSchemas } from "apollo-server";
-import CardModule from "./Modules/Cards";
+const { ApolloServer, mergeSchemas } = require("apollo-server");
+const { schema: CardModule } = require("./modules/Cards");
 
-const schema = mergeSchemas({ schemas: [CardModule] });
+const Cards = CardModule();
 
-const server = new ApolloServer({ typeDefs, resolvers });
+const schema = mergeSchemas({ schemas: [Cards] });
+
+const server = new ApolloServer({ schema });
 
 server.listen().then(({ url }) => {
   console.log(`🚀  Server ready at ${url}`);

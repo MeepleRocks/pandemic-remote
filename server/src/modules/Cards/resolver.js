@@ -1,11 +1,15 @@
-import cards from "./data/cards.json";
-import factions from "./data/factions.json";
-import regions from "./data/regions";
+const cards = require("./data/cards.json");
+const factions = require("./data/factions.json");
+const regions = require("./data/regions.json");
 
-const resolvers = {
+module.exports = {
   Card: {
-    faction: ({ parent }) => factions[parent.faction],
-    region: ({ parent }) => regions[parent.region],
+    faction: (parent) => {
+      return factions[parent.faction];
+    },
+    region: (parent) => {
+      return regions[parent.region];
+    },
   },
   Query: {
     cards: () => cards,

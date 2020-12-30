@@ -1,5 +1,5 @@
 {
-  "1": { "name": "Allied" },
-  "2": { "name": "Neutral" },
-  "3": { "name": "Communist" }
+  "1": { "id": "1", "name": "Allied" },
+  "2": { "id": "2", "name": "Neutral" },
+  "3": { "id": "3", "name": "Communist" }
 }

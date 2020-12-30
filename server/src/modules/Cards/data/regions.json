@@ -1,8 +1,8 @@
 {
-  "1": { "name": "North America" },
-  "2": { "name": "South America" },
-  "3": { "name": "Europe" },
-  "4": { "name": "Africa" },
-  "5": { "name": "Asia" },
-  "6": { "name": "Pacific Rim" }
+  "1": { "id": "1", "name": "North America" },
+  "2": { "id": "2", "name": "South America" },
+  "3": { "id": "3", "name": "Europe" },
+  "4": { "id": "4", "name": "Africa" },
+  "5": { "id": "5", "name": "Asia" },
+  "6": { "id": "6", "name": "Pacific Rim" }
 }
