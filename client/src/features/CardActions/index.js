@@ -29,7 +29,7 @@ const CardActions = ({ hand, card }) => {
   return (
     <Grid
       container
-      spacing="1"
+      spacing={1}
       style={{
         alignItems: "center",
         justifyContent: "flex-end",
@@ -38,7 +38,7 @@ const CardActions = ({ hand, card }) => {
       <Grid item>
         <Button
           size="small"
-          color="success"
+          color="primary"
           onClick={(e) => {
             setXferOpen(e.currentTarget);
           }}
@@ -60,7 +60,7 @@ const CardActions = ({ hand, card }) => {
         </Menu>
       </Grid>
       <Grid item>
-        <Button size="small" color="error" onClick={handleDiscard}>
+        <Button size="small" color="secondary" onClick={handleDiscard}>
           <Discard />
         </Button>
       </Grid>

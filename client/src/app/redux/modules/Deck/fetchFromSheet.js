@@ -4,6 +4,5 @@ const SHEET_URL =
 const data = async () => {
   const result = await fetch(SHEET_URL);
   const json = result.json();
-  console.log(json);
 };
 export default data;

@@ -4,31 +4,37 @@ import PropTypes from "prop-types";
 import { useSelector } from "react-redux";
 
 import Grid from "@material-ui/core/Grid";
-import EventCard from "components/EventCard";
-import CityCard from "components/CityCard";
-import Deck from "components/Deck";
+import EventCard from "features/EventCard";
+import CityCard from "features/CityCard";
+import CardActions from "features/CardActions";
+import DiscardDeck from "./DiscardDeck";
+import PlayerDeck from "./PlayerDeck";
+
 import { name as deckName } from "app/redux/modules/Deck";
-import CardActions from "../CardActions";
 
 const Hand = ({ id }) => {
   const hand = useSelector((state) => state[deckName][id]);
   return (
     <div
       style={{
-        padding: "0 2rem 1rem",
+        padding: "1.5rem 2rem 2rem",
         borderBottom: "1px solid lightgray",
       }}
     >
       <Grid
+        id={`Hand-Controls-${id}`}
         container
-        spacing="2"
-        style={{ alignItems: "flex-end", marginBottom: "2rem" }}
+        spacing={2}
+        style={{
+          alignItems: "flex-end",
+          marginBottom: "1rem",
+        }}
       >
         <Grid item>
           <span
             style={{
               display: "inline-block",
-              marginBottom: "0.5rem",
+              marginBottom: "0.75rem",
               fontSize: "1rem",
               lineHeight: 1,
               fontWeight: 700,
@@ -37,15 +43,10 @@ const Hand = ({ id }) => {
           >{`Player ${id}`}</span>
         </Grid>
         <Grid item>
-          <Deck id={`hand-${id}`} hand={id} label="Player Deck" />
+          <PlayerDeck id={`hand-player-${id}`} hand={id} />
         </Grid>
         <Grid item>
-          <Deck
-            id={`hand-discard-${id}`}
-            hand={id}
-            location="discard"
-            label="Discard Deck"
-          />
+          <DiscardDeck id={`hand-discard-${id}`} hand={id} />
         </Grid>
         <Grid item>
           {hand.length > 7 && (
@@ -63,9 +64,9 @@ const Hand = ({ id }) => {
           )}
         </Grid>
       </Grid>
-      <Grid container spacing="4">
+      <Grid container spacing={4}>
         {hand.map((card, i) => (
-          <Grid item style={{ position: "relative" }}>
+          <Grid item style={{ position: "relative", paddingBottom: 0 }}>
             {!card.number ? <EventCard {...card} /> : <CityCard {...card} />}
 
             <div style={{ marginTop: "0.5rem" }}>

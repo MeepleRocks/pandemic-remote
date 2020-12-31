@@ -17,7 +17,6 @@ export const initialState = {
 
 export const fetchCards = createAsyncThunk(`${name}/fetchCards`, async () => {
   const data = fetchData();
-  console.log(data);
   return data;
 });
 
@@ -75,11 +74,9 @@ const slice = createSlice({
   },
   extraReducers: {
     [fetchCards.pending]: (state, action) => {
-      console.log("pending", action);
       return { ...state, pending: true };
     },
     [fetchCards.fulfilled]: (state, action) => {
-      console.log("fulfilled", action);
       return {
         ...state,
         cards: action.payload,
@@ -88,7 +85,6 @@ const slice = createSlice({
       };
     },
     [fetchCards.rejected]: (state, action) => {
-      console.log("rejected", action);
       return { ...state, error: action.error.message, pending: false };
     },
   },

@@ -4,8 +4,8 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { fetchCards } from "./app/redux/modules/Deck";
-import Hand from "./components/Hand";
-import Reset from "./components/Reset";
+import Hand from "./features/Hand";
+import Reset from "./features/Reset";
 
 const App = ({ hands }) => {
   const dispatch = useDispatch();

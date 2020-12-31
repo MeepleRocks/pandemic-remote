@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import Neutral from "@material-ui/icons/Language";
 import Communist from "@material-ui/icons/Star";
 import Allied from "@material-ui/icons/Toys";
+import Event from "@material-ui/icons/DoubleArrow";
 
 const Faction = ({ icon }) => {
   const container = {
@@ -24,6 +25,14 @@ const Faction = ({ icon }) => {
       </div>
     );
   }
+  if (icon === "2") {
+    return (
+      <div style={{ ...container, background: "slategray" }}>
+        <Neutral style={{ color: "snow" }} />
+      </div>
+    );
+  }
+
   if (icon === "3") {
     return (
       <div style={{ ...container, background: "darkred" }}>
@@ -33,8 +42,14 @@ const Faction = ({ icon }) => {
   }
 
   return (
-    <div style={{ ...container, background: "slategray" }}>
-      <Neutral style={{ color: "snow" }} />
+    <div
+      style={{
+        ...container,
+        transform: "rotate(270deg)",
+        background: "orangered",
+      }}
+    >
+      <Event style={{ color: "antiquewhite" }} />
     </div>
   );
 };

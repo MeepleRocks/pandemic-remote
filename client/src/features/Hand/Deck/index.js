@@ -20,7 +20,7 @@ const Deck = ({ id, hand, label, location = "deck" }) => {
     }
   };
   return (
-    <FormControl>
+    <FormControl variant="outlined" size="small">
       <InputLabel id={id}>{label}</InputLabel>
       <Select
         labelId={id}
