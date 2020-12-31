@@ -9,10 +9,10 @@ import Number from "./Number";
 const CityCard = ({ name, region, faction, number }) => {
   return (
     <Paper
+      elevation={5}
       style={{
         display: "inline-block",
         position: "relative",
-        margin: "1rem",
         padding: " 0.75rem 0.5rem 0.25rem",
         width: "12rem",
         height: "18rem",

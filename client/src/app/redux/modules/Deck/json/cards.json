@@ -1,0 +1,479 @@
+[
+  {
+    "id": "1",
+    "name": "Atlanta",
+    "region": "1",
+    "faction": "1",
+    "number": "2",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "2",
+    "name": "Washington",
+    "region": "1",
+    "faction": "1",
+    "number": "1",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "3",
+    "name": "San Francisco",
+    "region": "1",
+    "faction": "1",
+    "number": "6",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "4",
+    "name": "New York",
+    "region": "1",
+    "faction": "1",
+    "number": "4",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "5",
+    "name": "Los Angeles",
+    "region": "1",
+    "faction": "1",
+    "number": "8",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "6",
+    "name": "Toronto",
+    "region": "1",
+    "faction": "1",
+    "number": "9",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "7",
+    "name": "Mexico City",
+    "region": "1",
+    "faction": "2",
+    "number": "5",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "8",
+    "name": "Havana",
+    "region": "1",
+    "faction": "3",
+    "number": "5",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "9",
+    "name": "Bogota",
+    "region": "2",
+    "faction": "2",
+    "number": "3",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "10",
+    "name": "Buenos Aires",
+    "region": "2",
+    "faction": "2",
+    "number": "1",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "11",
+    "name": "Santiago",
+    "region": "2",
+    "faction": "2",
+    "number": "5",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "12",
+    "name": "Lima",
+    "region": "2",
+    "faction": "2",
+    "number": "7",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "13",
+    "name": "Sao Paulo",
+    "region": "2",
+    "faction": "2",
+    "number": "9",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "14",
+    "name": "Istanbul",
+    "region": "3",
+    "faction": "1",
+    "number": "2",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "15",
+    "name": "London",
+    "region": "3",
+    "faction": "1",
+    "number": "7",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "16",
+    "name": "Kiev",
+    "region": "3",
+    "faction": "3",
+    "number": "3",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "17",
+    "name": "East Berlin",
+    "region": "3",
+    "faction": "3",
+    "number": "9",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "18",
+    "name": "Leningrad",
+    "region": "3",
+    "faction": "3",
+    "number": "2",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "19",
+    "name": "Madrid",
+    "region": "3",
+    "faction": "2",
+    "number": "6",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "20",
+    "name": "Moscow",
+    "region": "3",
+    "faction": "3",
+    "number": "8",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "21",
+    "name": "Paris",
+    "region": "3",
+    "faction": "1",
+    "number": "5",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "22",
+    "name": "Prague",
+    "region": "3",
+    "faction": "3",
+    "number": "1",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "23",
+    "name": "Rome",
+    "region": "3",
+    "faction": "1",
+    "number": "8",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "24",
+    "name": "Warsaw",
+    "region": "3",
+    "faction": "3",
+    "number": "4",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "25",
+    "name": "Algiers",
+    "region": "4",
+    "faction": "1",
+    "number": "3",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "26",
+    "name": "Cairo",
+    "region": "4",
+    "faction": "3",
+    "number": "7",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "27",
+    "name": "Lagos",
+    "region": "4",
+    "faction": "2",
+    "number": "2",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "28",
+    "name": "Khartoum",
+    "region": "4",
+    "faction": "2",
+    "number": "4",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "29",
+    "name": "Leopoldville",
+    "region": "4",
+    "faction": "2",
+    "number": "8",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "30",
+    "name": "Johannesburg",
+    "region": "4",
+    "faction": "1",
+    "number": "6",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "31",
+    "name": "Bombay",
+    "region": "5",
+    "faction": "2",
+    "number": "2",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "32",
+    "name": "Delhi",
+    "region": "5",
+    "faction": "2",
+    "number": "4",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "33",
+    "name": "Karachi",
+    "region": "5",
+    "faction": "2",
+    "number": "8",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "34",
+    "name": "Peking",
+    "region": "5",
+    "faction": "3",
+    "number": "2",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "35",
+    "name": "Baghdad",
+    "region": "5",
+    "faction": "3",
+    "number": "5",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "36",
+    "name": "Riyadh",
+    "region": "5",
+    "faction": "2",
+    "number": "6",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "37",
+    "name": "Shanghai",
+    "region": "5",
+    "faction": "3",
+    "number": "6",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "38",
+    "name": "Hanoi",
+    "region": "5",
+    "faction": "3",
+    "number": "1",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "39",
+    "name": "Pyongyang",
+    "region": "5",
+    "faction": "3",
+    "number": "8",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "40",
+    "name": "Novosibirsk",
+    "region": "5",
+    "faction": "3",
+    "number": "9",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "41",
+    "name": "Calcutta",
+    "region": "5",
+    "faction": "2",
+    "number": "7",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "42",
+    "name": "Bangkok",
+    "region": "5",
+    "faction": "2",
+    "number": "3",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "43",
+    "name": "Saigon",
+    "region": "5",
+    "faction": "1",
+    "number": "4",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "44",
+    "name": "Tokyo",
+    "region": "6",
+    "faction": "2",
+    "number": "1",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "45",
+    "name": "Sydney",
+    "region": "6",
+    "faction": "1",
+    "number": "5",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "46",
+    "name": "Osaka",
+    "region": "6",
+    "faction": "2",
+    "number": "4",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "47",
+    "name": "Jakarta",
+    "region": "6",
+    "faction": "2",
+    "number": "6",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "48",
+    "name": "Manila",
+    "region": "6",
+    "faction": "2",
+    "number": "9",
+    "description": "",
+    "condition": ""
+  },
+  {
+    "id": "49",
+    "name": "Airlift",
+    "region": "",
+    "faction": "",
+    "number": "",
+    "description": "Move a pawn to any city or move a team to any city.",
+    "condition": "Play any time. Not an action."
+  },
+  {
+    "id": "50",
+    "name": "Forecast",
+    "region": "",
+    "faction": "",
+    "number": "",
+    "description": "Look at the next 6 threat cards. Rearrance them in any order and return them to the top of the Threat deck.",
+    "condition": "Play any time. Not an action."
+  },
+  {
+    "id": "51",
+    "name": "Cover of Darkness",
+    "region": "",
+    "faction": "",
+    "number": "",
+    "description": "This turn, remove 1 agent from each city the player drive/ferries to.",
+    "condition": "Play during the Do Actions step of a turn. Not an action."
+  },
+  {
+    "id": "52",
+    "name": "A holdover from the war",
+    "region": "",
+    "faction": "",
+    "number": "",
+    "description": "Put a safehouse onto 1 city on the board.",
+    "condition": "Play any time. Not an action."
+  },
+  {
+    "id": "53",
+    "name": "Counter-intelligence",
+    "region": "",
+    "faction": "",
+    "number": "",
+    "description": "Put 1 card from the Threat discard pile into the game end area.",
+    "condition": "Play any time. You may play this between the Add Agents and Intensify steps of an excalation. Not an action."
+  }
+]

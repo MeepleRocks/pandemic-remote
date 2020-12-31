@@ -1,51 +1,77 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import { useQuery, gql } from "@apollo/client";
+
+import { useSelector } from "react-redux";
+
 import Grid from "@material-ui/core/Grid";
 import EventCard from "components/EventCard";
 import CityCard from "components/CityCard";
 import Deck from "components/Deck";
+import { name as deckName } from "app/redux/modules/Deck";
+import CardActions from "../CardActions";
 
-const Hand = () => {
-  const [hand, setHand] = useState([]);
-
-  const Q_CARDS = gql`
-    query Cards {
-      cards {
-        id
-        name
-        region {
-          name
-          id
-        }
-        faction {
-          name
-          id
-        }
-        number
-        description
-        condition
-      }
-    }
-  `;
-  const { data: { cards = [] } = {} } = useQuery(Q_CARDS);
-
-  const handleDraw = (id) => {
-    const card = cards.find((item) => item.id === id);
-    setHand((state) => [...state, card]);
-  };
-
+const Hand = ({ id }) => {
+  const hand = useSelector((state) => state[deckName][id]);
   return (
-    <div>
-      <Deck hand={hand} onDraw={handleDraw} />
+    <div
+      style={{
+        padding: "0 2rem 1rem",
+        borderBottom: "1px solid lightgray",
+      }}
+    >
       <Grid
         container
-        style={{ padding: "4rem", borderBottom: "1px solid darkslategray" }}
+        spacing="2"
+        style={{ alignItems: "flex-end", marginBottom: "2rem" }}
       >
-        {hand.map((card) => (
-          <div style={{ display: "inline" }}>
+        <Grid item>
+          <span
+            style={{
+              display: "inline-block",
+              marginBottom: "0.5rem",
+              fontSize: "1rem",
+              lineHeight: 1,
+              fontWeight: 700,
+              textTransform: "uppercase",
+            }}
+          >{`Player ${id}`}</span>
+        </Grid>
+        <Grid item>
+          <Deck id={`hand-${id}`} hand={id} label="Player Deck" />
+        </Grid>
+        <Grid item>
+          <Deck
+            id={`hand-discard-${id}`}
+            hand={id}
+            location="discard"
+            label="Discard Deck"
+          />
+        </Grid>
+        <Grid item>
+          {hand.length > 7 && (
+            <span
+              style={{
+                fontWeight: 700,
+                lineHeight: 1,
+                color: "red",
+                display: "inline-block",
+                marginBottom: "0.5rem",
+              }}
+            >
+              Player has too many cards.
+            </span>
+          )}
+        </Grid>
+      </Grid>
+      <Grid container spacing="4">
+        {hand.map((card, i) => (
+          <Grid item style={{ position: "relative" }}>
             {!card.number ? <EventCard {...card} /> : <CityCard {...card} />}
-          </div>
+
+            <div style={{ marginTop: "0.5rem" }}>
+              <CardActions hand={id} card={card.id} />
+            </div>
+          </Grid>
         ))}
       </Grid>
     </div>

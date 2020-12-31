@@ -2,17 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Root from "./Root";
 import reportWebVitals from "./reportWebVitals";
-import { ApolloProvider } from "@apollo/client";
+import AppProvider from "./app";
 
 import CssBaseline from "@material-ui/core/CssBaseline";
-import client from "app";
 
 ReactDOM.render(
   <React.StrictMode>
     <CssBaseline />
-    <ApolloProvider client={client}>
+    <AppProvider>
       <Root />
-    </ApolloProvider>
+    </AppProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

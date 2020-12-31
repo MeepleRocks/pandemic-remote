@@ -5,10 +5,10 @@ import Paper from "@material-ui/core/Paper";
 const EventCard = ({ name, description, condition }) => {
   return (
     <Paper
+      elevation={5}
       style={{
         display: "inline-block",
         position: "relative",
-        margin: "1rem",
         padding: "0.5rem",
         width: "12rem",
         height: "18rem",
