@@ -7,14 +7,12 @@ import { fetchCards } from "./app/redux/modules/Deck";
 import Hand from "./components/Hand";
 import Reset from "./components/Reset";
 
-const App = () => {
+const App = ({ hands }) => {
   const dispatch = useDispatch();
-
-  const hands = ["1", "2", "3", "4"];
 
   useEffect(() => {
     dispatch(fetchCards());
-  }, [dispatch, hands]);
+  }, [dispatch]);
 
   return (
     <div className="App">
@@ -33,4 +31,7 @@ const App = () => {
   );
 };
 
+App.defaultProps = {
+  hands: ["1", "2", "3", "4"],
+};
 export default App;
