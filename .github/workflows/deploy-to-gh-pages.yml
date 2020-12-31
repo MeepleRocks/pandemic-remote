@@ -12,7 +12,8 @@ jobs:
         with:
           persist-credentials: false
       - name: Build and Test
-
+        env:
+          PUBLIC_URL: /pandemic-remote
         working-directory: ./client
         run: |
           npm ci
