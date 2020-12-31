@@ -6,23 +6,25 @@ import Faction from "./Faction";
 import Region from "./Region";
 import Number from "./Number";
 
-const index = ({ name, region, faction, number }) => {
+const CityCard = ({ name, region, faction, number }) => {
   return (
     <Paper
       style={{
         display: "inline-block",
         position: "relative",
         margin: "1rem",
-        padding: " 1rem 0.5rem 0.5rem",
+        padding: " 0.75rem 0.5rem 0.25rem",
         width: "12rem",
         height: "18rem",
-        background: "antiquewhite",
+        background: "beige",
+        lineHeight: 0,
       }}
     >
       <div
         style={{
           lineHeight: 1,
           height: "100%",
+          background: "antiquewhite",
           boxShadow: "0px 0px 4px rgba(0,0,0,0.1)",
         }}
       >
@@ -55,7 +57,7 @@ const index = ({ name, region, faction, number }) => {
         <div
           style={{
             position: "absolute",
-            bottom: "1rem",
+            bottom: "0.75rem",
             left: "1rem",
             lineHeight: 1,
           }}
@@ -67,11 +69,11 @@ const index = ({ name, region, faction, number }) => {
   );
 };
 
-index.propTypes = {
+CityCard.propTypes = {
   name: PropTypes.string,
   region: PropTypes.shape({ id: PropTypes.string, name: PropTypes.string }),
   faction: PropTypes.shape({ id: PropTypes.string, name: PropTypes.string }),
   number: PropTypes.string,
 };
 
-export default index;
+export default CityCard;

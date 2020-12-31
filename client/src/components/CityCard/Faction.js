@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Globe from "@material-ui/icons/Language";
-import Star from "@material-ui/icons/Star";
+import Neutral from "@material-ui/icons/Language";
+import Commie from "@material-ui/icons/Star";
+import Allied from "@material-ui/icons/Toys";
 
 const Faction = ({ icon }) => {
   const container = {
@@ -19,25 +20,27 @@ const Faction = ({ icon }) => {
   if (icon === "1") {
     return (
       <div style={{ ...container, background: "navy" }}>
-        <Star style={{ color: "white" }} />
+        <Allied style={{ color: "aqua" }} />
       </div>
     );
   }
   if (icon === "3") {
     return (
       <div style={{ ...container, background: "darkred" }}>
-        <Star style={{ color: "yellow" }} />
+        <Commie style={{ color: "yellow" }} />
       </div>
     );
   }
 
   return (
     <div style={{ ...container, background: "slategray" }}>
-      <Globe style={{ color: "snow" }} />
+      <Neutral style={{ color: "snow" }} />
     </div>
   );
 };
 
-Faction.propTypes = {};
+Faction.propTypes = {
+  icon: PropTypes.string,
+};
 
 export default Faction;

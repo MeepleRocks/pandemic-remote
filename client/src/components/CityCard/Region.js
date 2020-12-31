@@ -27,6 +27,9 @@ const Region = ({ id, name }) => {
   );
 };
 
-Region.propTypes = {};
+Region.propTypes = {
+  id: PropTypes.string,
+  name: PropTypes.string,
+};
 
 export default Region;
