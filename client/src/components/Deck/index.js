@@ -29,7 +29,7 @@ const Deck = ({ id, hand, onDraw }) => {
     }
   };
   return (
-    <FormControl>
+    <FormControl style={{ margin: "0 1rem" }}>
       <InputLabel id={id}>Deck</InputLabel>
       <Select
         labelId={id}
