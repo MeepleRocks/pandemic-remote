@@ -16,16 +16,18 @@ const CityCard = ({ name, region, faction, number }) => {
         padding: " 0.75rem 0.5rem 0.25rem",
         width: "12rem",
         height: "18rem",
+        maxWidth: "12rem",
+        maxHeight: "18rem",
+        lineHeight: 1,
         background: "beige",
-        lineHeight: 0,
       }}
     >
       <div
         style={{
           lineHeight: 1,
-          height: "100%",
+          minHeight: "100%",
           background: "antiquewhite",
-          boxShadow: "0px 0px 4px rgba(0,0,0,0.1)",
+          boxShadow: "0px 0px 4px rgba(85,85,85, 0.25)",
         }}
       >
         <Grid container spacing={1} style={{ alignItems: "center" }}>

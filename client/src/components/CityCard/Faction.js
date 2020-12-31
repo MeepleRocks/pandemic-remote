@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import Neutral from "@material-ui/icons/Language";
-import Commie from "@material-ui/icons/Star";
+import Communist from "@material-ui/icons/Star";
 import Allied from "@material-ui/icons/Toys";
 
 const Faction = ({ icon }) => {
@@ -27,7 +27,7 @@ const Faction = ({ icon }) => {
   if (icon === "3") {
     return (
       <div style={{ ...container, background: "darkred" }}>
-        <Commie style={{ color: "yellow" }} />
+        <Communist style={{ color: "yellow" }} />
       </div>
     );
   }

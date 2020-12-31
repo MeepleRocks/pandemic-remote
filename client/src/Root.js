@@ -1,41 +1,14 @@
-import { gql, useQuery } from "@apollo/client";
-import CityCard from "components/CityCard";
-import EventCard from "./components/EventCard";
-
-const Q_CARDS = gql`
-  query Cards {
-    cards {
-      id
-      name
-      region {
-        name
-        id
-      }
-      faction {
-        name
-        id
-      }
-      number
-    }
-  }
-`;
+import Hand from "./components/Hand";
 
 const App = () => {
-  const { data: { cards = [] } = {} } = useQuery(Q_CARDS);
-  const events = [
-    {
-      name: "Test Event Card",
-      description: "Test event card description",
-      condition: "Test event condition",
-    },
+  const hands = [
+    ["1", "9", "53", "32", "25", "17", "20"],
+    ["2", "8", "33", "26", "52", "18", "21"],
   ];
   return (
     <div className="App">
-      {cards.map((card) => (
-        <CityCard {...card} />
-      ))}
-      {events.map((event) => (
-        <EventCard {...event} />
+      {hands.map((hand, i) => (
+        <Hand key={`hand-${i}`} cards={hand} />
       ))}
     </div>
   );

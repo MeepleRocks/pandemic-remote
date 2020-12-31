@@ -15,6 +15,8 @@ type Card {
   region: Region
   faction: Faction
   number: String
+  description: String
+  condition: String
 }
 
 type Query {

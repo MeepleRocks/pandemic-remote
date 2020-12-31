@@ -12,6 +12,7 @@ const EventCard = ({ name, description, condition }) => {
         padding: "0.5rem",
         width: "12rem",
         height: "18rem",
+        lineHeight: 1,
         background: "beige",
       }}
     >
@@ -22,18 +23,17 @@ const EventCard = ({ name, description, condition }) => {
           padding: "1rem",
           textAlign: "center",
           background: "orangered",
-          boxShadow: "0px 0px 4px rgba(0,0,0,0.15)",
+          boxShadow: "0px 0px 4px rgba(85,85,85, 0.25)",
         }}
       >
-        <span
+        <div
           style={{
-            display: "block",
             marginBottom: "2rem",
             fontWeight: 700,
           }}
         >
           {name}
-        </span>
+        </div>
         <div
           style={{
             background: "antiquewhite",
@@ -41,14 +41,15 @@ const EventCard = ({ name, description, condition }) => {
             fontSize: "0.75rem",
           }}
         >
-          <div style={{}}>{description}</div>
-          <hr
+          <div
             style={{
-              margin: "1rem 0",
-              borderTop: "1px solid black",
-              color: "transparent",
+              marginBottom: "0.5rem",
+              paddingBottom: "0.5rem",
+              borderBottom: "1px solid black",
             }}
-          />
+          >
+            {description}
+          </div>
           <div>{condition}</div>
         </div>
       </div>
