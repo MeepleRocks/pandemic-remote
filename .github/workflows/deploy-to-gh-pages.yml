@@ -16,7 +16,7 @@ jobs:
         working-directory: ./client
         run: |
           npm ci
-          npm run build
+          CI="" npm run build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.7.1
