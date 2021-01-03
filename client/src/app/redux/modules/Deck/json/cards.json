@@ -565,5 +565,14 @@
     "number": "",
     "description": "Choose 2 players.  They select 1 card from their hands and swap them",
     "condition": "Play any time. Not an action."
+  },
+  {
+    "id": "64",
+    "name": "Spectrum Interferrence",
+    "region": "",
+    "faction": "",
+    "number": "",
+    "description": "Return up to two satellite tokens that are currently in play back to the reserve.",
+    "condition": "Play any time. Not an action."
   }
 ]
