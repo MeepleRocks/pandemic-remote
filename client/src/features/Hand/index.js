@@ -21,10 +21,15 @@ const Hand = ({ id }) => {
           spacing={2}
         >
           <Grid item>
-            <span className="Hand__title">{`Player ${id}`}</span>
+            <span className="Hand__title">{`${id}`}</span>
           </Grid>
           <Grid item>
-            <TextField size="small" label="Name" variant="outlined" />
+            <TextField
+              className="Hand__name"
+              size="small"
+              label="Name"
+              variant="outlined"
+            />
           </Grid>
           <Grid item>
             <PlayerDeck id={`hand-player-${id}`} hand={id} />
