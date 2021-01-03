@@ -460,7 +460,7 @@
   },
   {
     "id": "52",
-    "name": "A holdover from the war",
+    "name": "A Holdover From The War",
     "region": "",
     "faction": "",
     "number": "",
@@ -469,11 +469,101 @@
   },
   {
     "id": "53",
-    "name": "Counter-intelligence",
+    "name": "Counter-Intelligence",
     "region": "",
     "faction": "",
     "number": "",
     "description": "Put 1 card from the Threat discard pile into the game end area.",
     "condition": "Play any time. You may play this between the Add Agents and Intensify steps of an excalation. Not an action."
+  },
+  {
+    "id": "54",
+    "name": "Border Security",
+    "region": "",
+    "faction": "",
+    "number": "",
+    "description": "Each Player may add up to 2 checkpoint tokens to the board on connections adjacent to their current city",
+    "condition": "Play any time. Not an action."
+  },
+  {
+    "id": "55",
+    "name": "Extended Time",
+    "region": "",
+    "faction": "",
+    "number": "",
+    "description": "Give 2 Action Tokens to the current player",
+    "condition": "Play any time. Not an action."
+  },
+  {
+    "id": "56",
+    "name": "Weekend Rendezvous",
+    "region": "",
+    "faction": "",
+    "number": "",
+    "description": "You may move any pawn(s) to a single city containing another pawn",
+    "condition": "Play any time. Not an action."
+  },
+  {
+    "id": "57",
+    "name": "Scramble Teams",
+    "region": "",
+    "faction": "",
+    "number": "",
+    "description": "Move every team up to 3 cities away from their current locations",
+    "condition": "Play any time. Not an action."
+  },
+  {
+    "id": "58",
+    "name": "One Quiet Night",
+    "region": "",
+    "faction": "",
+    "number": "",
+    "description": "Skip the Draw Threat Cards step this turn",
+    "condition": "Play any time. Not an action."
+  },
+  {
+    "id": "59",
+    "name": "Trial Vaccine",
+    "region": "",
+    "faction": "",
+    "number": "",
+    "description": "Remove 2 disease cubes from the board",
+    "condition": "Play any time. Not an action."
+  },
+  {
+    "id": "60",
+    "name": "Bureaucratic Entanglements",
+    "region": "",
+    "faction": "",
+    "number": "",
+    "description": "Remove 1 or 2 agents from the board",
+    "condition": "Play any time. Not an action."
+  },
+  {
+    "id": "61",
+    "name": "Undocumented Actions",
+    "region": "",
+    "faction": "",
+    "number": "",
+    "description": "Move a Restriction card to the reserve.  It is no longer in effect this game",
+    "condition": "Play any time. Not an action."
+  },
+  {
+    "id": "62",
+    "name": "Diversion",
+    "region": "",
+    "faction": "",
+    "number": "",
+    "description": "Move up to 3 incident tokens to 1 city on the board",
+    "condition": "Play any time. Not an action."
+  },
+  {
+    "id": "63",
+    "name": "Encoded Messages",
+    "region": "",
+    "faction": "",
+    "number": "",
+    "description": "Choose 2 players.  They select 1 card from their hands and swap them",
+    "condition": "Play any time. Not an action."
   }
 ]
