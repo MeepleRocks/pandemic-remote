@@ -16,7 +16,7 @@ const App = ({ hands }) => {
 
   return (
     <div className="App">
-      <AppBar position="static">
+      <AppBar position="static" style={{ marginBottom: "1rem" }}>
         <Toolbar>
           <Typography style={{ flexGrow: 1 }} variant="h6">
             Pandemic Player Cards

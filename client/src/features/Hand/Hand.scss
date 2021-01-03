@@ -1,24 +1,31 @@
 .Hand {
-  padding: 1.5rem 2rem 2rem;
+  display: block;
+  clear: both;
+  position: relative;
   border-bottom: 1px solid lightgray;
 
+  &__header {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
   &__controls {
-    align-items: flex-end;
+    align-items: center;
     margin-bottom: 1rem;
   }
   &__title {
     display: inline-block;
-    margin-bottom: 0.75rem;
     font-size: 1rem;
-    line-height: 1;
     font-weight: 700;
     text-transform: uppercase;
   }
   &__warning {
     display: inline-block;
-    margin-bottom: 0.5rem;
     font-weight: 700;
-    line-height: 1;
     color: red;
+  }
+
+  &__cards {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
