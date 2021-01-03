@@ -6,7 +6,6 @@
 
   &__header {
     padding: 1rem;
-    margin-bottom: 2rem;
   }
   &__controls {
     align-items: center;
@@ -17,6 +16,12 @@
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
+  }
+  &__name {
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 6rem;
+    border: 1px solid rgba(0, 0, 0, 0.87);
   }
   &__warning {
     display: inline-block;

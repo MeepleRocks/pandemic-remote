@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useSelector } from "react-redux";
 import Grid from "@material-ui/core/Grid";
+import TextField from "@material-ui/core/TextField";
 import PlayerCard from "features/PlayerCard";
 import DiscardDeck from "./DiscardDeck";
 import PlayerDeck from "./PlayerDeck";
@@ -21,6 +22,9 @@ const Hand = ({ id }) => {
         >
           <Grid item>
             <span className="Hand__title">{`Player ${id}`}</span>
+          </Grid>
+          <Grid item>
+            <TextField size="small" label="Name" variant="outlined" />
           </Grid>
           <Grid item>
             <PlayerDeck id={`hand-player-${id}`} hand={id} />
