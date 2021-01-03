@@ -1,0 +1,16 @@
+.Counter {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    .Counter__decrease {
+    }
+    .Counter__increase {
+    }
+  }
+
+  &__value {
+    display: inline-block;
+    padding: 1rem;
+  }
+}

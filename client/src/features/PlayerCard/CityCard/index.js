@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import Faction from "./Faction";
+import Faction from "components/Faction";
 import Region from "./Region";
 import Number from "./Number";
 

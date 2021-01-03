@@ -1,0 +1,15 @@
+.PlayerCard {
+  &__actions {
+    opacity: 0;
+    transform: translateY(-1rem);
+    margin-top: 0.25rem;
+    transition: 0.2s all;
+  }
+
+  &:hover {
+    .PlayerCard__actions {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

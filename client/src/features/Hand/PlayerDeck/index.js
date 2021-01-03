@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useDispatch, useSelector } from "react-redux";
 import { draw } from "app/redux/modules/Deck";
-import CardSelector from "../CardSelector";
+import CardSelector from "components/CardSelector";
 
 const PlayerDeck = ({ id, hand }) => {
   const dispatch = useDispatch();
