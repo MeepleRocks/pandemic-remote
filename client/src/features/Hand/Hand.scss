@@ -2,8 +2,13 @@
   display: block;
   clear: both;
   position: relative;
-  border-bottom: 1px solid lightgray;
+  min-height: auto;
+  margin: 1rem 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.1) !important;
 
+  &.isTurn {
+    background-color: rgba(255, 255, 255, 1) !important;
+  }
   &__header {
     padding: 1rem;
   }
@@ -29,8 +34,36 @@
     color: red;
   }
 
-  &__cards {
+  &__cardContainer {
+    position: relative;
+    z-index: 3;
     padding-left: 1rem;
     padding-right: 1rem;
+    min-height: 1rem;
+
+    &.isCollapsed {
+      .Hand__card {
+        margin-left: -10.5rem;
+
+        &:first-child {
+          margin-left: unset;
+        }
+        &:hover {
+          z-index: 1;
+        }
+        .PlayerCard {
+          transition: 0.25s all;
+          &:hover {
+            transform: translateY(-2rem);
+            z-index: 4;
+          }
+        }
+      }
+    }
+  }
+  &__card {
+    position: relative;
+    padding-bottom: 0;
+    transition: 0.25s all;
   }
 }

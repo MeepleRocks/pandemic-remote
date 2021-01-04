@@ -19,7 +19,7 @@ const CardSelector = ({ id, options, label, onChange }) => {
       id={id}
       clearOnBlur={true}
       size="small"
-      style={{ width: 300 }}
+      style={{ width: "14rem" }}
       onChange={handleChange}
       options={options}
       autoHighlight

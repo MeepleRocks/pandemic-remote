@@ -1,27 +1,22 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Incident from "@material-ui/icons/Error";
+import Escalation from "@material-ui/icons/SignalCellularAlt";
 import Counter from "components/Counter";
 import { increase, decrease } from "app/redux/modules/Deck";
-import "./Incident.scss";
 
-const IncidentCounter = () => {
+const EscalationCounter = () => {
   const dispatch = useDispatch();
-  const value = useSelector((state) => state.deck.incident);
+  const value = useSelector((state) => state.deck.escalation);
 
   const handleDecrease = () => {
-    dispatch(decrease("incident"));
+    dispatch(decrease("escalation"));
   };
   const handleIncrease = () => {
-    dispatch(increase("incident"));
+    dispatch(increase("escalation"));
   };
   return (
     <Counter
-      title={
-        <span className="Incident">
-          <Incident style={{ color: "white" }} />
-        </span>
-      }
+      title={<Escalation style={{ color: "firebrick" }} />}
       onDecrease={handleDecrease}
       onIncrease={handleIncrease}
       decreaseDisabled={value <= 0}
@@ -30,4 +25,4 @@ const IncidentCounter = () => {
   );
 };
 
-export default IncidentCounter;
+export default EscalationCounter;

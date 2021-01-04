@@ -1,16 +1,36 @@
 .Counter {
+  height: 2.25rem;
+  text-align: center;
+  padding: 0 0.5rem;
   display: flex;
   align-items: center;
+  background-color: #e0e0e0 !important;
+  transition: 0.2s all;
+  &.outlined {
+    height: 2.5rem;
+    padding: 0.25rem 0.5rem;
+    background-color: white !important;
+    box-shadow: none !important;
+    border-color: #c1c1c1;
+  }
+  &__title {
+    display: inline-block;
+    margin-right: 0.25rem;
+    text-transform: uppercase;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.02857em;
+    color: rgba(0, 0, 0, 0.87);
+  }
 
-  &:hover {
-    .Counter__decrease {
-    }
-    .Counter__increase {
-    }
+  .Counter__decrease,
+  .Counter__increase {
+    padding: 0;
   }
 
   &__value {
     display: inline-block;
-    padding: 1rem;
+    padding: 0 0.25rem;
+    color: rgba(0, 0, 0, 0.87);
   }
 }
