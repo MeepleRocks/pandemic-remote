@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pandemic-remote/static/css/main.96b3163f.chunk.css",
+    "main.css": "/pandemic-remote/static/css/main.bbd2e9d7.chunk.css",
     "main.js": "/pandemic-remote/static/js/main.fe55e845.chunk.js",
     "main.js.map": "/pandemic-remote/static/js/main.fe55e845.chunk.js.map",
     "runtime-main.js": "/pandemic-remote/static/js/runtime-main.306a266d.js",
@@ -10,13 +10,13 @@
     "static/js/3.6532b843.chunk.js": "/pandemic-remote/static/js/3.6532b843.chunk.js",
     "static/js/3.6532b843.chunk.js.map": "/pandemic-remote/static/js/3.6532b843.chunk.js.map",
     "index.html": "/pandemic-remote/index.html",
-    "static/css/main.96b3163f.chunk.css.map": "/pandemic-remote/static/css/main.96b3163f.chunk.css.map",
+    "static/css/main.bbd2e9d7.chunk.css.map": "/pandemic-remote/static/css/main.bbd2e9d7.chunk.css.map",
     "static/js/2.6e752f46.chunk.js.LICENSE.txt": "/pandemic-remote/static/js/2.6e752f46.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.306a266d.js",
     "static/js/2.6e752f46.chunk.js",
-    "static/css/main.96b3163f.chunk.css",
+    "static/css/main.bbd2e9d7.chunk.css",
     "static/js/main.fe55e845.chunk.js"
   ]
 }
