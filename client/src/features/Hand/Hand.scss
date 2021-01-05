@@ -40,30 +40,26 @@
     padding-left: 1rem;
     padding-right: 1rem;
     min-height: 1rem;
-
-    &.isCollapsed {
-      .Hand__card {
-        margin-left: -10.5rem;
-
-        &:first-child {
-          margin-left: unset;
-        }
-        &:hover {
-          z-index: 1;
-        }
-        .PlayerCard {
-          transition: 0.25s all;
-          &:hover {
-            transform: translateY(-2rem);
-            z-index: 4;
-          }
-        }
-      }
-    }
   }
   &__card {
     position: relative;
     padding-bottom: 0;
     transition: 0.25s all;
+    margin-left: unset !important;
+  }
+  &.isCollapsed {
+    .Hand__card {
+      transition: 0.25s all;
+
+      margin-left: -10.5rem !important;
+
+      &:first-child {
+        margin-left: unset !important;
+      }
+      &:hover {
+        transform: translateY(-2rem);
+        z-index: 4;
+      }
+    }
   }
 }

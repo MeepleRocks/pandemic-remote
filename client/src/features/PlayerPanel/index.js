@@ -51,7 +51,7 @@ const PlayerPanel = ({ id }) => {
         </div>
         <div>
           <div container className="PlayerPanel__hand">
-            <Hand id={id} isCollapsed={!isPassportOpen} />
+            <Hand id={id} />
           </div>
         </div>
       </div>
