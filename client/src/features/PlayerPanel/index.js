@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { useSelector } from "react-redux";
 import cx from "classnames";
-import { Grid, IconButton, Paper } from "@material-ui/core";
+import Grid from "@material-ui/core/Grid";
+import IconButton from "@material-ui/core/IconButton";
+import Paper from "@material-ui/core/Paper";
+import ChevronRight from "@material-ui/icons/ChevronRight";
 import PlayerName from "features/Passport/PlayerName";
 import Hand from "features/Hand";
-import TurnTokenCounter from "features/Passport/TurnTokenCounter";
-
-import { name as deckName } from "app/redux/modules/Deck";
 import Passport from "features/Passport";
+import TurnTokenCounter from "features/Passport/TurnTokenCounter";
+import { name as deckName } from "app/redux/modules/Deck";
 import "./PlayerPanel.scss";
 
 const PlayerPanel = ({ id }) => {
@@ -17,7 +19,11 @@ const PlayerPanel = ({ id }) => {
   const playerTurn = state.playerTurn.toString();
   return (
     <Paper
-      className={cx({ PlayerPanel: true, isTurn: playerTurn === id })}
+      className={cx({
+        PlayerPanel: true,
+        isTurn: playerTurn === id,
+        isExpanded: isPassportOpen,
+      })}
       elevation={playerTurn === id ? 4 : 2}
     >
       <div className="PlayerPanel__header">
@@ -31,21 +37,23 @@ const PlayerPanel = ({ id }) => {
         </Grid>
       </div>
       <div className="PlayerPanel__content">
-        <Grid container spacing={2} style={{ alignItems: "stretch" }}>
-          <Grid item>
-            <Passport id={id} isExpanded={isPassportOpen} />
-          </Grid>
-          <Grid item>
-            <IconButton onClick={() => setPassportOpen((state) => !state)}>
-              {isPassportOpen ? "-" : "+"}
-            </IconButton>
-          </Grid>
-          <Grid item>
-            <div container className="PlayerPanel__hand">
-              <Hand id={id} isCollapsed={!isPassportOpen} />
-            </div>
-          </Grid>
-        </Grid>
+        <div>
+          <Passport id={id} isExpanded={isPassportOpen} />
+        </div>
+        <div>
+          <IconButton
+            className="PlayerPanel__expand"
+            size="small"
+            onClick={() => setPassportOpen((state) => !state)}
+          >
+            <ChevronRight fontSize="small" />
+          </IconButton>
+        </div>
+        <div>
+          <div container className="PlayerPanel__hand">
+            <Hand id={id} isCollapsed={!isPassportOpen} />
+          </div>
+        </div>
       </div>
     </Paper>
   );

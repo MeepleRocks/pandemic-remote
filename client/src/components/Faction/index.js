@@ -15,7 +15,7 @@ const Faction = ({ id }) => {
     4: Event,
   };
   const factionId = !(id in icons) ? "4" : id;
-  const Comp = icons[factionId];
+  const Comp = factionId in icons ? icons[factionId] : icons["4"];
   return (
     <span
       className={cx({
@@ -23,7 +23,7 @@ const Faction = ({ id }) => {
         allied: id === "1",
         neutral: id === "2",
         communist: id === "3",
-        event: id === "4",
+        event: !(id in icons),
       })}
     >
       {Comp && <Comp />}

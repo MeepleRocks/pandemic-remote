@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import { Grid } from "@material-ui/core";
 import PlayerFaction from "./PlayerFaction";
 import AliasInfo from "./AliasInfo";
+import "./Passport.scss";
 
 const Passport = ({ id, isExpanded }) => {
   const { faction, passport = [] } = useSelector((state) => state.player[id]);
@@ -12,14 +13,14 @@ const Passport = ({ id, isExpanded }) => {
       return item.faction === faction.toString();
     }) || {};
   return (
-    <div className="Passport" style={{ padding: "1rem 0 1rem 1rem" }}>
-      <div>
-        <Grid container style={{ alignItems: "center" }} spacing={1}>
-          <Grid item>
-            <PlayerFaction id={id} />
-          </Grid>
-          <Grid item>{alias.name}</Grid>
+    <div className="Passport">
+      <Grid container spacing={1} alignItems="center">
+        <Grid item>
+          <PlayerFaction id={id} />
         </Grid>
+        <Grid item>{alias.name}</Grid>
+      </Grid>
+      <div style={{ paddingTop: "0.5rem" }}>
         <AliasInfo id={id} isExpanded={isExpanded} />
       </div>
     </div>

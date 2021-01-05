@@ -1,0 +1,40 @@
+.AliasInfo {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  &__primary {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    width: 194px;
+    margin-right: 1rem;
+  }
+  &__secondary {
+    position: relative;
+    z-index: 5;
+    width: 194px;
+    margin-left: -194px;
+    margin-bottom: -100%;
+    opacity: 0;
+    transition: 0.2s all;
+
+    .isExpanded & {
+      margin-left: 0;
+      margin-bottom: 0;
+      opacity: 1;
+    }
+  }
+
+  &__tag {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    max-width: 14rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &.liability {
+      border: 1px solid indianred;
+    }
+  }
+}

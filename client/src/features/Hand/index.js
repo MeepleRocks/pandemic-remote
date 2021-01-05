@@ -9,7 +9,8 @@ import { name } from "app/redux/modules/Deck";
 import "./Hand.scss";
 
 const Hand = ({ id, isCollapsed }) => {
-  const hand = useSelector((state) => state[name][id].hand);
+  const data = useSelector((state) => state[name][id]);
+  const { hand = [] } = data;
   return (
     <Grid
       container

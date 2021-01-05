@@ -85,8 +85,8 @@ const slice = createSlice({
       const fromHand = [...state[from].hand];
       const toHand = [...state[to].hand];
       const card = state.cards.find((item) => item.id === cardId);
-      toHand.hand.push(card);
-      const newFromHand = fromHand.hand.filter((item) => item.id !== cardId);
+      toHand.push(card);
+      const newFromHand = fromHand.filter((item) => item.id !== cardId);
 
       return {
         ...state,
@@ -102,7 +102,7 @@ const slice = createSlice({
       const discard = state.discard.filter((item) => item.id !== cardId);
       hand.push(card);
 
-      return { ...state, discard, [handId]: hand };
+      return { ...state, discard, [handId]: { ...state[handId], hand } };
     },
     increase: (state, action) => {
       if (action.payload in state) {

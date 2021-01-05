@@ -13,10 +13,10 @@ const DeckControls = ({ id }) => {
     <div className="DeckControls">
       <Grid
         container
+        alignItems="center"
+        justify="center"
         style={{
-          alignItems: "center",
           height: "100%",
-          justifyContent: "center",
         }}
       >
         <IconButton size="medium" onClick={() => setOpen(() => true)}>

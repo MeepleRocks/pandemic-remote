@@ -6,4 +6,23 @@
   &.isTurn {
     background-color: rgba(255, 255, 255, 1) !important;
   }
+
+  &__content {
+    display: flex;
+    align-items: top;
+    padding-top: 1rem;
+  }
+
+  &__expand {
+    margin-left: -2rem !important;
+    margin-right: 1rem !important;
+    margin-top: 0.25rem !important;
+    transform: rotate(0deg);
+    transition: 0.2s all;
+
+    .isExpanded & {
+      margin-left: -1rem !important;
+      transform: rotate(180deg);
+    }
+  }
 }

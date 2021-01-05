@@ -27,14 +27,7 @@ const CardActions = ({ hand, card }) => {
 
   const players = hands.filter((h) => h !== hand);
   return (
-    <Grid
-      container
-      spacing={1}
-      style={{
-        alignItems: "center",
-        justifyContent: "flex-end",
-      }}
-    >
+    <Grid container alignItems="center" justify="flex-end" spacing={1}>
       <Grid item>
         <Button
           size="small"
