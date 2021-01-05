@@ -6,12 +6,20 @@
   align-items: center;
   background-color: #e0e0e0 !important;
   transition: 0.2s all;
+  width: fit-content;
   &.outlined {
     height: 2.5rem;
     padding: 0.25rem 0.5rem;
     background-color: white !important;
     box-shadow: none !important;
     border-color: #c1c1c1;
+  }
+  &.flat {
+    height: 2.5rem;
+    padding: 0.25rem 0.5rem;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
   }
   &__title {
     display: inline-block;

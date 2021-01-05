@@ -19,7 +19,7 @@ const TurnTokenCounter = ({ id }) => {
   };
   return (
     <Counter
-      variant="outlined"
+      variant="flat"
       title={
         <span className="TurnToken">
           <Icon>

@@ -1,0 +1,11 @@
+{
+  "1": {
+    "title": "Treat",
+    "description": "As an action, return 1 Disease cube in your city to the supply."
+  },
+  "2": {
+    "title": "Transport crew",
+    "description": "On your turn, whenever you move to a new city, you may move any teams in your city with you."
+  },
+  "3": { "title": "", "description": "" }
+}

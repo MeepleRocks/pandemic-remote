@@ -1,0 +1,30 @@
+.Faction {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  text-align: center;
+
+  &.allied {
+    background: navy;
+    color: aqua;
+  }
+  &.neutral {
+    background: slategray;
+    color: snow;
+  }
+  &.communist {
+    background: darkred;
+    color: yellow;
+  }
+  &.event {
+    background: orangered;
+    color: antiquewhite;
+    svg {
+      transform: rotate(270deg);
+    }
+  }
+}

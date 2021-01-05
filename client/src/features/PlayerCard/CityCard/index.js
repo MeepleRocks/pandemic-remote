@@ -32,7 +32,7 @@ const CityCard = ({ name, region, faction, number }) => {
       >
         <Grid container spacing={1} style={{ alignItems: "center" }}>
           <Grid item xs={3}>
-            <Faction icon={faction.id} />
+            <Faction id={faction.id} />
           </Grid>
           <Grid item xs={9}>
             <span

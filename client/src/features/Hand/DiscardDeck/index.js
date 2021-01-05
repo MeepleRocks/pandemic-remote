@@ -4,18 +4,18 @@ import { useDispatch, useSelector } from "react-redux";
 import { redraw } from "app/redux/modules/Deck";
 import CardSelector from "components/CardSelector";
 
-const DiscardDeck = ({ id, hand }) => {
+const DiscardDeck = ({ id }) => {
   const dispatch = useDispatch();
   const options = useSelector((state) => state.deck.discard);
 
   const handleChange = (value = "") => {
     if (value) {
-      dispatch(redraw({ hand, card: value.toString() }));
+      dispatch(redraw({ hand: id, card: value.toString() }));
     }
   };
   return (
     <CardSelector
-      id={id}
+      id={`DiscardDeck-${id}`}
       options={options ? options : []}
       label={"Discard Deck"}
       onChange={handleChange}
@@ -24,8 +24,7 @@ const DiscardDeck = ({ id, hand }) => {
 };
 
 DiscardDeck.propTypes = {
-  id: PropTypes.string,
-  hand: PropTypes.string,
+  id: PropTypes.string.isRequired,
 };
 
 export default DiscardDeck;
