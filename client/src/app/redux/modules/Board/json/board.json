@@ -1,0 +1,482 @@
+[
+  {
+    "id": "1",
+    "name": "Atlanta",
+    "region": "1",
+    "faction": "1",
+    "connections": "6,2,7,5",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "2",
+    "name": "Washington",
+    "region": "1",
+    "faction": "1",
+    "connections": "4,6,1",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "3",
+    "name": "San Francisco",
+    "region": "1",
+    "faction": "1",
+    "connections": "6,5,44,43",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "4",
+    "name": "New York",
+    "region": "1",
+    "faction": "1",
+    "connections": "6,2,15,19",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "5",
+    "name": "Los Angeles",
+    "region": "1",
+    "faction": "1",
+    "connections": "3,45,7,1",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "6",
+    "name": "Toronto",
+    "region": "1",
+    "faction": "1",
+    "connections": "1,2,3,4",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "7",
+    "name": "Mexico City",
+    "region": "1",
+    "faction": "2",
+    "connections": "5,1,8,9,12",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "8",
+    "name": "Havana",
+    "region": "1",
+    "faction": "3",
+    "connections": "7,9",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "9",
+    "name": "Bogota",
+    "region": "2",
+    "faction": "2",
+    "connections": "7,8,10,12,13",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "10",
+    "name": "Buenos Aires",
+    "region": "2",
+    "faction": "2",
+    "connections": "12,9,13",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "11",
+    "name": "Santiago",
+    "region": "2",
+    "faction": "2",
+    "connections": "12",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "12",
+    "name": "Lima",
+    "region": "2",
+    "faction": "2",
+    "connections": "7,9,10,11",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "13",
+    "name": "Sao Paulo",
+    "region": "2",
+    "faction": "2",
+    "connections": "9,10,19,27",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "14",
+    "name": "Istanbul",
+    "region": "3",
+    "faction": "1",
+    "connections": "22,16,35,26,23",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "15",
+    "name": "London",
+    "region": "3",
+    "faction": "1",
+    "connections": "21,19,4",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "16",
+    "name": "Kiev",
+    "region": "3",
+    "faction": "3",
+    "connections": "18,20,14,24",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "17",
+    "name": "East Berlin",
+    "region": "3",
+    "faction": "3",
+    "connections": "24,22,21",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "18",
+    "name": "Leningrad",
+    "region": "3",
+    "faction": "3",
+    "connections": "20,16,24",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "19",
+    "name": "Madrid",
+    "region": "3",
+    "faction": "2",
+    "connections": "15,21,25,13,4",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "20",
+    "name": "Moscow",
+    "region": "3",
+    "faction": "3",
+    "connections": "40,35,16,18",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "21",
+    "name": "Paris",
+    "region": "3",
+    "faction": "1",
+    "connections": "15,17,22,23,19",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "22",
+    "name": "Prague",
+    "region": "3",
+    "faction": "3",
+    "connections": "24,14,21,17",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "23",
+    "name": "Rome",
+    "region": "3",
+    "faction": "1",
+    "connections": "21,14,25",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "24",
+    "name": "Warsaw",
+    "region": "3",
+    "faction": "3",
+    "connections": "18,16,22,17",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "25",
+    "name": "Algiers",
+    "region": "4",
+    "faction": "1",
+    "connections": "19,23,26",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "26",
+    "name": "Cairo",
+    "region": "4",
+    "faction": "3",
+    "connections": "14,35,36,28,25",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "27",
+    "name": "Lagos",
+    "region": "4",
+    "faction": "2",
+    "connections": "28,29,13",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "28",
+    "name": "Khartoum",
+    "region": "4",
+    "faction": "2",
+    "connections": "26,36,30,29,27",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "29",
+    "name": "Leopoldville",
+    "region": "4",
+    "faction": "2",
+    "connections": "27,28,30",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "30",
+    "name": "Johannesburg",
+    "region": "4",
+    "faction": "1",
+    "connections": "29,28",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "31",
+    "name": "Bombay",
+    "region": "5",
+    "faction": "2",
+    "connections": "33,32,41,42,47",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "32",
+    "name": "Delhi",
+    "region": "5",
+    "faction": "2",
+    "connections": "41,31,33",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "33",
+    "name": "Karachi",
+    "region": "5",
+    "faction": "2",
+    "connections": "32,31,36,35",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "34",
+    "name": "Peking",
+    "region": "5",
+    "faction": "3",
+    "connections": "40,39,37",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "35",
+    "name": "Baghdad",
+    "region": "5",
+    "faction": "3",
+    "connections": "20,33,36,26,14",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "36",
+    "name": "Riyadh",
+    "region": "5",
+    "faction": "2",
+    "connections": "35,33,28,26",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "37",
+    "name": "Shanghai",
+    "region": "5",
+    "faction": "3",
+    "connections": "34,44,46,43,38",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "38",
+    "name": "Hanoi",
+    "region": "5",
+    "faction": "3",
+    "connections": "37,43,48,42,41",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "39",
+    "name": "Pyongyang",
+    "region": "5",
+    "faction": "3",
+    "connections": "34",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "40",
+    "name": "Novosibirsk",
+    "region": "5",
+    "faction": "3",
+    "connections": "20,34",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "41",
+    "name": "Calcutta",
+    "region": "5",
+    "faction": "2",
+    "connections": "32,38,42,31",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "42",
+    "name": "Bangkok",
+    "region": "5",
+    "faction": "2",
+    "connections": "38,48,47,31,41",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "43",
+    "name": "Saigon",
+    "region": "5",
+    "faction": "1",
+    "connections": "37,3,48,38",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "44",
+    "name": "Tokyo",
+    "region": "6",
+    "faction": "2",
+    "connections": "3,46,37",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "45",
+    "name": "Sydney",
+    "region": "6",
+    "faction": "1",
+    "connections": "47,48,5",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "46",
+    "name": "Osaka",
+    "region": "6",
+    "faction": "2",
+    "connections": "44,37",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "47",
+    "name": "Jakarta",
+    "region": "6",
+    "faction": "2",
+    "connections": "31,42,48,45",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  },
+  {
+    "id": "48",
+    "name": "Manila",
+    "region": "6",
+    "faction": "2",
+    "connections": "38,43,45,47,42",
+    "controlCenter": "",
+    "bug": "",
+    "surveilance": ""
+  }
+]
