@@ -5,7 +5,14 @@ const data = () =>
     const connections = city.connections
       .split(",")
       .map((con) => con.toString());
-    return { ...city, infection: 0, agents: 0, connections };
+    return {
+      ...city,
+      latitude: parseFloat(city.latitude),
+      longitude: parseFloat(city.longitude),
+      infection: 0,
+      agents: 0,
+      connections,
+    };
   });
 
 export default data;

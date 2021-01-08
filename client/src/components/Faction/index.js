@@ -7,7 +7,7 @@ import Allied from "@material-ui/icons/Toys";
 import Event from "@material-ui/icons/DoubleArrow";
 import "./Faction.scss";
 
-const Faction = ({ id }) => {
+const Faction = ({ id, size, style }) => {
   const icons = {
     1: Allied,
     2: Neutral,
@@ -24,6 +24,7 @@ const Faction = ({ id }) => {
         neutral: id === "2",
         communist: id === "3",
         event: !(id in icons),
+        [size]: size,
       })}
     >
       {Comp && <Comp />}
@@ -31,12 +32,13 @@ const Faction = ({ id }) => {
   );
 };
 
-Faction.propTypes = {
+Faction.defaultProps = {
   id: "4",
 };
 
 Faction.propTypes = {
   id: PropTypes.string,
+  size: PropTypes.oneOf(["small", "medium"]),
 };
 
 export default Faction;

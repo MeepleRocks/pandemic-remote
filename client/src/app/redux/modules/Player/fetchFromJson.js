@@ -3,7 +3,7 @@ import actions from "./json/actions";
 
 const data = () => {
   // reduce data by unique passport id's into list of aliases
-  const sorted = passports.reduce((acc, cur) => {
+  const sorted = passports.reduce((acc, cur, i) => {
     const key = cur.passport;
     return { ...acc, [key]: [...(acc[key] ? acc[key] : []), cur] };
   }, {});
@@ -11,7 +11,7 @@ const data = () => {
   // reduce the sub-objects into an array of objects
   // for each password
   const parsed = Object.entries(sorted).reduce(
-    (primary, [passportId, aliases]) => {
+    (primary, [passportId, aliases], i) => {
       const data = aliases.map((alias) => {
         const newData = Object.entries(alias).reduce((secondary, [k, v]) => {
           if (!k.includes("__")) {
@@ -44,7 +44,7 @@ const data = () => {
       });
 
       // return the primary acc with the parsed passport data
-      return { ...primary, [passportId]: data };
+      return { ...primary, turnId: i + 1, fart: "poop", [passportId]: data };
     },
     {}
   );

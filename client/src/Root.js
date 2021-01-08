@@ -53,9 +53,8 @@ const App = ({ hands }) => {
           </div>
         </Toolbar>
       </AppBar>
-      {hands.map((hand, i) => (
-        <PlayerPanel key={`hand-${i}`} id={hand} />
-      ))}
+      {!showBoard &&
+        hands.map((hand, i) => <PlayerPanel key={`hand-${i}`} id={hand} />)}
       {showBoard && (
         <div
           style={{

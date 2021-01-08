@@ -7,5 +7,8 @@
     "title": "Transport crew",
     "description": "On your turn, whenever you move to a new city, you may move any teams in your city with you."
   },
-  "3": { "title": "", "description": "" }
+  "3": {
+    "title": "Deep Cover",
+    "description": "When you do the Neutralize Agents action remove ALL the Agents from your city."
+  }
 }

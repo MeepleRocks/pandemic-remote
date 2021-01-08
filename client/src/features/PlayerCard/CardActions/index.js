@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Button from "@material-ui/core/IconButton";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -14,6 +14,8 @@ const hands = ["1", "2", "3", "4"];
 const CardActions = ({ hand, card }) => {
   const dispatch = useDispatch();
 
+  const players = useSelector((state) => state.player);
+
   const [isXferOpen, setXferOpen] = useState(null);
   const handleXfer = ({ target: { value = "" } = {} }) => {
     setXferOpen(null);
@@ -25,7 +27,9 @@ const CardActions = ({ hand, card }) => {
     dispatch(discard({ hand, card }));
   };
 
-  const players = hands.filter((h) => h !== hand);
+  const playerList = hands
+    .filter((h) => h !== hand)
+    .map((playerId) => players[playerId]);
   return (
     <Grid container alignItems="center" justify="flex-end" spacing={1}>
       <Grid item>
@@ -45,9 +49,9 @@ const CardActions = ({ hand, card }) => {
           open={Boolean(isXferOpen)}
           onClose={handleXfer}
         >
-          {players.map((player) => (
-            <MenuItem value={player} onClick={handleXfer}>
-              {player}
+          {playerList.map((player) => (
+            <MenuItem value={player.id} onClick={handleXfer}>
+              {player.name}
             </MenuItem>
           ))}
         </Menu>

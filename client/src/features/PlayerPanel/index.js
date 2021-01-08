@@ -16,6 +16,8 @@ import "./PlayerPanel.scss";
 const PlayerPanel = ({ id }) => {
   const [isPassportOpen, setPassportOpen] = useState(false);
   const state = useSelector((state) => state[deckName]);
+  console.log(state);
+  const { turnId = "" } = state[id];
   const playerTurn = state.playerTurn.toString();
   return (
     <Paper
@@ -30,6 +32,9 @@ const PlayerPanel = ({ id }) => {
         <Grid container spacing={1}>
           <Grid item>
             <PlayerName id={id} />
+          </Grid>
+          <Grid item>
+            <span style={{ fontSize: "1rem" }}>{`Player ${turnId}`}</span>
           </Grid>
           <Grid item>
             <TurnTokenCounter id={id} />

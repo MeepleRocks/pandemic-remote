@@ -6,10 +6,14 @@ import { advanceTurn } from "app/redux/modules/Deck";
 
 const PlayerTurn = () => {
   const dispatch = useDispatch();
-  const playerTurn = useSelector((state) => state.deck.playerTurn);
+  const state = useSelector((state) => state);
+  const playerTurn = state.deck.playerTurn;
+
+  const players = state.player;
   const handleClick = () => {
     dispatch(advanceTurn());
   };
+
   return (
     <Button
       variant="contained"
@@ -17,7 +21,9 @@ const PlayerTurn = () => {
       style={{ minWidth: "unset" }}
     >
       <Meeple />
-      {`${playerTurn.toString()}`}
+      <span style={{ display: "inline-block", marginLeft: "0.5rem" }}>
+        {players[playerTurn].name}
+      </span>
     </Button>
   );
 };
