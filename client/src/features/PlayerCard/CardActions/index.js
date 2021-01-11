@@ -8,13 +8,14 @@ import Grid from "@material-ui/core/Grid";
 import Xfer from "@material-ui/icons/MobileScreenShare";
 import Discard from "@material-ui/icons/Delete";
 import { xfer, discard } from "app/redux/modules/Deck";
+import { name as playerKey } from "app/redux/modules/Player";
 
 const hands = ["1", "2", "3", "4"];
 
 const CardActions = ({ hand, card }) => {
   const dispatch = useDispatch();
 
-  const players = useSelector((state) => state.player);
+  const players = useSelector((state) => state[playerKey]);
 
   const [isXferOpen, setXferOpen] = useState(null);
   const handleXfer = ({ target: { value = "" } = {} }) => {

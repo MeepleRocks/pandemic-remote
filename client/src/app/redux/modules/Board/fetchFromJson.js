@@ -12,6 +12,7 @@ const data = () =>
       infection: 0,
       agents: 0,
       connections,
+      incidents: 0,
     };
   });
 

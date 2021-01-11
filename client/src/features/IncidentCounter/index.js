@@ -2,12 +2,12 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Incident from "@material-ui/icons/Error";
 import Counter from "components/Counter";
-import { increase, decrease } from "app/redux/modules/Deck";
+import { name as deckKey, increase, decrease } from "app/redux/modules/Deck";
 import "./Incident.scss";
 
 const IncidentCounter = () => {
   const dispatch = useDispatch();
-  const value = useSelector((state) => state.deck.incident);
+  const value = useSelector((state) => state[deckKey].incident);
 
   const handleDecrease = () => {
     dispatch(decrease("incident"));

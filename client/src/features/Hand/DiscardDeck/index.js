@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useDispatch, useSelector } from "react-redux";
-import { redraw } from "app/redux/modules/Deck";
+import { name as deckKey, redraw } from "app/redux/modules/Deck";
 import CardSelector from "components/CardSelector";
 
 const DiscardDeck = ({ id }) => {
   const dispatch = useDispatch();
-  const options = useSelector((state) => state.deck.discard);
+  const options = useSelector((state) => state[deckKey].discard);
 
   const handleChange = (value = "") => {
     if (value) {

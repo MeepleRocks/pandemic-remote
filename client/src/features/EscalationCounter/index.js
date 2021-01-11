@@ -2,11 +2,11 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Escalation from "@material-ui/icons/SignalCellularAlt";
 import Counter from "components/Counter";
-import { increase, decrease } from "app/redux/modules/Deck";
+import { name as deckKey, increase, decrease } from "app/redux/modules/Deck";
 
 const EscalationCounter = () => {
   const dispatch = useDispatch();
-  const value = useSelector((state) => state.deck.escalation);
+  const value = useSelector((state) => state[deckKey].escalation);
 
   const handleDecrease = () => {
     dispatch(decrease("escalation"));

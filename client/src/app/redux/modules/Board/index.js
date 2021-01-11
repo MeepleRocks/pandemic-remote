@@ -7,6 +7,7 @@ export const initialState = {
   pending: false,
   error: "",
   cities: [],
+  activeCity: "",
 };
 
 export const fetchCities = createAsyncThunk(`${name}/fetchCities`, async () => {
@@ -17,6 +18,10 @@ export const fetchCities = createAsyncThunk(`${name}/fetchCities`, async () => {
 const slice = createSlice({
   name,
   initialState,
+  setActiveCity: (state, action) =>
+    action.payload
+      ? { ...state, activeCity: action.playload }
+      : { ...state, activeCity: "" },
   reducers: {
     increase: (state, action) => {
       const { id, key } = action.payload;

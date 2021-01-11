@@ -4,12 +4,16 @@ import { useDispatch, useSelector } from "react-redux";
 import Icon from "@material-ui/core/SvgIcon";
 import Clock from "@material-ui/icons/AccessTime";
 import Counter from "components/Counter";
-import { addTurnToken, removeTurnToken } from "app/redux/modules/Deck";
+import {
+  name as deckKey,
+  addTurnToken,
+  removeTurnToken,
+} from "app/redux/modules/Deck";
 import "./TurnTokenCounter.scss";
 
 const TurnTokenCounter = ({ id }) => {
   const dispatch = useDispatch();
-  const value = useSelector((state) => state.deck[id].turnTokens);
+  const value = useSelector((state) => state[deckKey][id].turnTokens);
 
   const handleDecrease = () => {
     dispatch(removeTurnToken(id));

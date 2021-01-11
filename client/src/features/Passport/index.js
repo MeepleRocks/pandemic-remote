@@ -4,10 +4,13 @@ import { useSelector } from "react-redux";
 import { Grid } from "@material-ui/core";
 import PlayerFaction from "./PlayerFaction";
 import AliasInfo from "./AliasInfo";
+import { name as playerKey } from "app/redux/modules/Player";
 import "./Passport.scss";
 
 const Passport = ({ id, isExpanded }) => {
-  const { faction, passport = [] } = useSelector((state) => state.player[id]);
+  const { faction, passport = [] } = useSelector(
+    (state) => state[playerKey][id]
+  );
   const alias =
     passport.find((item) => {
       return item.faction === faction.toString();

@@ -15,10 +15,9 @@ import "./PlayerPanel.scss";
 
 const PlayerPanel = ({ id }) => {
   const [isPassportOpen, setPassportOpen] = useState(false);
-  const state = useSelector((state) => state[deckName]);
-  console.log(state);
-  const { turnId = "" } = state[id];
-  const playerTurn = state.playerTurn.toString();
+  const deck = useSelector((state) => state[deckName]);
+  const { turnId = "" } = deck[id];
+  const playerTurn = deck.playerTurn.toString();
   return (
     <Paper
       className={cx({

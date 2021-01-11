@@ -63,25 +63,24 @@ class Marker extends BaseControl {
           </div>
           <div style={{ paddingTop: "0.25rem" }}>
             {Array(agents).map((agent) => (
-              <Agent />
+              <img
+                alt="agent"
+                style={{ width: "1.25rem", height: "1.25rem" }}
+                src={Agent}
+              />
             ))}
-            <img
-              alt="agent"
-              style={{ width: "1.25rem", height: "1.25rem" }}
-              src={Agent}
-            />
           </div>
           <div style={{ paddingTop: "0.25rem" }}>
             {Array(agents).map((agent) => (
               <span
-                style={{ color: "limegreen", width: "1rem", height: "1rem" }}
+                style={{
+                  display: "inline-block",
+                  background: "limegreen",
+                  width: "1rem",
+                  height: "1rem",
+                }}
               />
             ))}
-            <img
-              alt="agent"
-              style={{ width: "1.25rem", height: "1.25rem" }}
-              src={Agent}
-            />
           </div>
         </div>
       </div>

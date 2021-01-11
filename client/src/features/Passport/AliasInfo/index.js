@@ -3,10 +3,12 @@ import PropTypes from "prop-types";
 import { useSelector } from "react-redux";
 import cx from "classnames";
 import Paper from "@material-ui/core/Paper";
+
+import { name as playerKey } from "app/redux/modules/Player";
 import "./AliasInfo.scss";
 
 const AliasInfo = ({ id, isExpanded }) => {
-  const data = useSelector((state) => state.player[id]);
+  const data = useSelector((state) => state[playerKey][id]);
 
   const { passport, faction } = data;
   const alias = passport.find((ps) => ps.faction === faction.toString()) || {};
