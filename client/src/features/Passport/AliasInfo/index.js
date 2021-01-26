@@ -36,9 +36,9 @@ const AliasInfo = ({ id, isExpanded }) => {
       </div>
       <div className="AliasInfo__secondary">
         {Boolean(assets.length) &&
-          assets.map((asset) => {
+          assets.map((asset, i) => {
             return (
-              <Paper className="AliasInfo__tag">
+              <Paper key={`tag-${i}`} className="AliasInfo__tag">
                 <div>
                   <strong>{asset.title}</strong>
                 </div>
@@ -48,9 +48,12 @@ const AliasInfo = ({ id, isExpanded }) => {
             );
           })}
         {Boolean(liabilities.length) &&
-          liabilities.map((liability) => {
+          liabilities.map((liability, i) => {
             return (
-              <Paper className="AliasInfo__tag liability">
+              <Paper
+                key={`liability-${i}`}
+                className="AliasInfo__tag liability"
+              >
                 <div>
                   <strong>{liability.title}</strong>
                 </div>

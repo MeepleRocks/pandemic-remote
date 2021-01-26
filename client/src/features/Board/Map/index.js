@@ -60,8 +60,9 @@ const Map = ({ data }) => {
           }}
         />
       </Source>
-      {/*data.map((item) => (
+      {data.map((item) => (
         <Marker
+          key={item.id}
           id={item.id}
           name={item.name}
           latitude={item.latitude}
@@ -73,7 +74,7 @@ const Map = ({ data }) => {
           offsetTop={-100}
           onClick={(value) => console.log(value)}
         />
-      ))*/}
+      ))}
     </StaticMap>
   );
 };

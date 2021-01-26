@@ -19,7 +19,7 @@ import { Close } from "@material-ui/icons";
 const App = ({ hands }) => {
   const dispatch = useDispatch();
 
-  const [showBoard, setShowBoard] = useState(true);
+  const [showBoard, setShowBoard] = useState(false);
   const handleBoard = () => {
     setShowBoard((state) => !state);
   };
