@@ -54,7 +54,7 @@ const PlayerPanel = ({ id }) => {
           </IconButton>
         </div>
         <div>
-          <div container className="PlayerPanel__hand">
+          <div className="PlayerPanel__hand">
             <Hand id={id} />
           </div>
         </div>

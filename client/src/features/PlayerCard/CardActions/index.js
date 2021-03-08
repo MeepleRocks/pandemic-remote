@@ -18,7 +18,8 @@ const CardActions = ({ hand, card }) => {
   const players = useSelector((state) => state[playerKey]);
 
   const [isXferOpen, setXferOpen] = useState(null);
-  const handleXfer = ({ target: { value = "" } = {} }) => {
+  const handleXfer = (event) => {
+    const { target: { value = "" } = {} } = event;
     setXferOpen(null);
     if (value) {
       dispatch(xfer({ from: hand, to: value, card }));
@@ -30,7 +31,7 @@ const CardActions = ({ hand, card }) => {
 
   const playerList = hands
     .filter((h) => h !== hand)
-    .map((playerId) => players[playerId]);
+    .map((playerId) => ({ id: playerId, ...players[playerId] }));
   return (
     <Grid container alignItems="center" justify="flex-end" spacing={1}>
       <Grid item>
@@ -51,7 +52,7 @@ const CardActions = ({ hand, card }) => {
           onClose={handleXfer}
         >
           {playerList.map((player) => (
-            <MenuItem value={player.id} onClick={handleXfer}>
+            <MenuItem key={player.id} value={player.id} onClick={handleXfer}>
               {player.name}
             </MenuItem>
           ))}

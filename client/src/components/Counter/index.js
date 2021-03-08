@@ -10,15 +10,17 @@ import "./Counter.scss";
 const Counter = ({
   title,
   value,
-  variant,
+  variant: varProp,
   onDecrease,
   decreaseDisabled,
   onIncrease,
   increaseDisabled,
 }) => {
+  const variants = ["elevation", "outlined"];
+  const variant = variants.includes(varProp) ? varProp : null;
   return (
     <Paper
-      className={cx({ Counter: true, [variant]: variant })}
+      className={cx({ Counter: true, [varProp]: varProp })}
       variant={variant}
     >
       {title && <span className="Counter__title">{title}</span>}

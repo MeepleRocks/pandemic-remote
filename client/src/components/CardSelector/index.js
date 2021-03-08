@@ -47,6 +47,7 @@ const CardSelector = ({ id, options, label, onChange }) => {
               : null;
             return (
               <div
+                key={option.id}
                 tabIndex="0"
                 className="CardSelector__item"
                 onClick={() => handleClick(option.id)}
