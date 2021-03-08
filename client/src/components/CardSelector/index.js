@@ -6,7 +6,11 @@ import "./CardSelector.scss";
 
 const CardSelector = ({ id, options, label, onChange }) => {
   const [search, setSearch] = useState("");
-  const data = options.filter((option) => option.name.includes(search));
+  const data = options.filter((option) => {
+    const opt = option.name.toLowerCase();
+    const src = search.toLowerCase();
+    return opt.includes(src);
+  });
   const filtered = Array.isArray(data) ? data : [];
 
   const handleChange = ({ target: { value = "" } = {} }) => {
