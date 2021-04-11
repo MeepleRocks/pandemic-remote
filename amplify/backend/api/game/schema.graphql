@@ -50,7 +50,6 @@ type Player {
   passport: Passport!
   name: String
   turns: Int
-  passport: Passport
   alias: Alias
   hand: [Card]
 }
@@ -73,10 +72,6 @@ type Game @model {
   discard: [Card]
   escalation: Int
 }
-
-type Query {
-}
-
 
 # Mutation 
   # setPlayerOrder(gameId: ID!, order: playerOrderArg!): Order
