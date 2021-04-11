@@ -1,0 +1,89 @@
+type Region @model {
+  id: ID!
+  name: String!
+}
+type Faction @model {
+  id: ID!
+  name: String!
+}
+
+interface CardType {
+  name: String!
+  type: String!
+  description: String!
+  number: Int
+  region: Region
+  Faction: Faction
+}
+
+type Card implements CardType @model {
+  id: ID!
+  name: String!
+  type: String!
+  description: String!
+  number: Int
+  region: Region
+  Faction: Faction
+}
+
+type AliasItem @model {
+  id: ID!
+  name: String!
+  description: String!
+}
+
+type Alias @model {
+  id: ID!
+  name: String!
+  role: AliasItem
+  asset: [AliasItem]
+  liability: [AliasItem]
+}
+
+type Passport @model {
+  id: ID!
+  aliases: [Alias]
+}
+
+type Player {
+  id: ID!
+  passport: Passport!
+  name: String
+  turns: Int
+  passport: Passport
+  alias: Alias
+  hand: [Card]
+}
+
+type Order {
+  first: Player
+  second: Player
+  third: Player
+  forth: Player
+}
+
+type Game @model {
+  id: ID!
+  name: String!
+  description: String
+  players: Order
+  currentPlayer: Player
+  gameDeck: [Card]
+  deck: [Card]
+  discard: [Card]
+  escalation: Int
+}
+
+type Query {
+}
+
+
+# Mutation 
+  # setPlayerOrder(gameId: ID!, order: playerOrderArg!): Order
+  # advanceTurn
+  # addTurnToken 
+  # removeTurnToken
+  # assignCard
+  # setGameDeck
+  # setPlayerFaction
+
